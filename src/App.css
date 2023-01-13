@@ -1,0 +1,47 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-areas: "A B";
+}
+
+.image-container {
+  width: 462px;
+  margin: auto;
+  grid-area: A;
+}
+
+.image-content {
+  display: grid;
+  position: relative;
+}
+
+.image-content > * {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.icons {
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.description-container {
+  width: 462px;
+  grid-area: B;
+  margin: auto;
+}
+
+.code {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: "Crimson Text", serif;
+}
+
+.price {
+  font-size: 16px;
+}
